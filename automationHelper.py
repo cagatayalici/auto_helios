@@ -109,12 +109,6 @@ def runHelios(bridgeName:str, clas:str, verbose:bool, projectName:str, surveyLis
                     command = command + " --quiet"
                 autoRun(command,verbose)
                  
-        
-       
-       
-        
-
-  
 
 # Edits XML file of corresponding classes for scene and survey:
 def editXML (bridgeName:str, clas:str, projectName:str, pulseFreq_tripod:int = None, pulseFreq_airplane:int = None):
@@ -165,15 +159,11 @@ def editXML (bridgeName:str, clas:str, projectName:str, pulseFreq_tripod:int = N
         # If the name of xml file contains "component"
         if "component" in XMLFile.lower():
             surveys[0].attributes["name"].value = bridgeName + "_" + clas + "_survey"
-            # f = codecs.open(XMLFile, mode='w', encoding='UTF-8')
-            # file.writexml(f, encoding="UTF-8")
-            # f.close()
+      
         # If the name of xml file contains "environment"   
         elif "environment" in XMLFile.lower():
              surveys[0].attributes["name"].value = bridgeName + "_environment_survey"
-             # f = codecs.open(XMLFile, mode='w', encoding='UTF-8')
-             # file.writexml(f, encoding="UTF-8")
-             # f.close()
+           
         
         # if tripod pulse frequency is set automatically: 
         if("tripod" in XMLFile.lower() and pulseFreq_tripod is not None):
@@ -189,7 +179,6 @@ def editXML (bridgeName:str, clas:str, projectName:str, pulseFreq_tripod:int = N
         file.writexml(f, encoding="UTF-8")
         f.close()
             
-                 
     os.chdir(basefilePath)
     return surveyList
     
@@ -208,13 +197,11 @@ def automaticScan (bridgeName:str, isSameEnvironment:bool, startIndex:int, verbo
             # i.e suppose start index = 1, isSameEnvironment = 1 => compiler will not go into this if statement if bridgeName is 'bridge1'. 
             if( (clas == "environment") and (bridgeName != "bridge" + str(startIndex))):
                 if (not isSameEnvironment):
-                    # surveyList = editXML(bridgeName,clas,projectName)
                     surveyList = editXML(bridgeName,clas,projectName,pulseFreq_tripod,pulseFreq_airplane)
                     runHelios(bridgeName,clas,verbose,projectName,surveyList)
                     
             # For other classes and for the case where environment of each bridge is different
             else:
-                # surveyList = editXML(bridgeName,clas,projectName)
                 surveyList = editXML(bridgeName,clas,projectName,pulseFreq_tripod,pulseFreq_airplane) # edits XML file of corresponding class for scene and survey
                 runHelios(bridgeName,clas,verbose,projectName,surveyList) # runs helios 
         

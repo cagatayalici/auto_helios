@@ -5,37 +5,37 @@
 		<!-- leg000 -->		
 		<leg>
 			<platformSettings x="-30.0" y="-50.0" z="100.000" onGround="false" movePerSec_m="150"/>
-			<scannerSettings active="true" pulseFreq_hz="360000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
+			<scannerSettings active="true" pulseFreq_hz="120000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
 		</leg>
 		
 		<!-- leg001 -->		
 		<leg>
 			<platformSettings x="70.0" y="-10.0" z="100.000" onGround="false" movePerSec_m="200"/>
-			<scannerSettings active="true" pulseFreq_hz="360000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
+			<scannerSettings active="true" pulseFreq_hz="120000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
 		</leg>
 		
 		<!-- leg002 -->		
 		<leg>
 			<platformSettings x="70.0" y="0.0" z="100.000" onGround="false" movePerSec_m="150"/>
-			<scannerSettings active="true" pulseFreq_hz="360000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
+			<scannerSettings active="true" pulseFreq_hz="120000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
 		</leg>
 		
 		<!-- leg003 -->		
 		<leg>
 			<platformSettings x="-30.0" y="10.0" z="100.000" onGround="false" movePerSec_m="200"/>
-			<scannerSettings active="true" pulseFreq_hz="360000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
+			<scannerSettings active="true" pulseFreq_hz="120000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
 		</leg>
 		
 		<!-- leg004 -->		
 		<leg>
 			<platformSettings x="-30.0" y="50.0" z="100.000" onGround="false" movePerSec_m="150"/>
-			<scannerSettings active="true" pulseFreq_hz="360000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
+			<scannerSettings active="true" pulseFreq_hz="120000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0" trajectoryTimeInterval_s="0.067"/>
 		</leg>
 		
 		<!-- leg005 -->		
 		<leg>
 			<platformSettings x="70.0" y="10.0" z="100.000" onGround="false" movePerSec_m="200"/>
-			<scannerSettings active="true" pulseFreq_hz="360000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0"/>
+			<scannerSettings active="true" pulseFreq_hz="120000" scanAngle_deg="20.0" scanFreq_hz="200" headRotatePerSec_deg="0.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0"/>
 		</leg>
 	</survey>
 </document>

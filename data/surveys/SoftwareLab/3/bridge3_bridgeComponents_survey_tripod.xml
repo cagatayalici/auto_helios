@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><document>
 	<!-- Default scanner settings: -->
-	<scannerSettings id="profile1" active="true" pulseFreq_hz="1000" scanFreq_hz="120" scanAngle="180" headRotatePerSec_deg="10.0"/>
-	<survey name="bridge3_railings_survey" scene="data/scenes/SoftwareLab/bridge_scene.xml#bridge_scene" platform="data/platforms.xml#tripod" scanner="data/scanners_tls.xml#riegl_vz400">
+	<scannerSettings id="profile1" active="true" pulseFreq_hz="15000" scanFreq_hz="120" scanAngle="180" headRotatePerSec_deg="10.0"/>
+	<survey name="bridge3_environment_survey" scene="data/scenes/SoftwareLab/bridge_scene.xml#bridge_scene" platform="data/platforms.xml#tripod" scanner="data/scanners_tls.xml#riegl_vz400">
 		<FWFSettings binSize_ns="0.2" beamSampleQuality="3"/>
 		
 		<!-- leg001 -->		

@@ -1,40 +1,61 @@
-helios - main 
+auto_helios
 	data 
 		sceneparts 
-			projects
-				dataset
-					1 
-					   - bridge1_abutments.obj
-					   - bridge1_deck.obj
-					   - bridge1_environment.obj
-					   - bridge1_piers.obj
-					   - bridge1_railings.obj
-					2  
-					   - bridge2_abutments.obj
-					   - bridge2_deck.obj
-					   - bridge2_environment.obj
-					   - bridge2_piers.obj
-					   - bridge2_railings.obj
+			SoftwareLab 				# project name 
+				1  				# sceneparts of the 1st bridge
+				  - bridge1_abutments.obj
+				  - bridge1_abutments.mtl
+				  - bridge1_deck.obj
+				  - bridge1_deck.mtl
+				  - bridge1_environment.obj
+				  - bridge1_environment.mtl
+				  - bridge1_railings.obj
+				  - bridge1_railings.mtl
+
+				2 				# sceneparts of 2nd bridge
+				  - bridge2_abutments.obj
+				  - bridge2_abutments.mtl
+				  - bridge2_deck.obj
+				  - bridge2_deck.mtl
+				  - bridge2_environment.obj
+				  - bridge2_environment.mtl
+				  - bridge2_piers.obj
+				  - bridge2_piers.mtl
+				  - bridge2_railings.obj
+				  - bridge2_railings.mtl
+				
+				{other bridge sceneparts} 	# same structure continues for other bridges i.e. 3,4,5 ...
+
+			{your project} 				# name of your project. Folders inside should follow the same structure in 'SoftwareLab'
+		
 		scenes 
-			projects
-				dataset 
-					- bridge_scene.xml
-		surveys 
-			projects 
-				dataset
-					1
-					   - bridge1_bridgeComponents_survey.xml
-					   - bridge1_environment_survey_airplane.xml
-					   - bridge1_environment_survey_tripod.xml
-					2
-					   - bridge2_bridgeComponents_survey.xml
-					   - bridge2_environment_survey_airplane.xml
-					   - bridge2_environment_survey_tripod.xml
+			SoftwareLab 				# project name 
+				- bridge_scene.xml		# stores information about which obj file is going to be scanned and scaling factor. File path to each obj file is 
+								# automatically updated while running
+				- bridge_scene.scene		# it is automatically created when Helios is run
+
+			{your project}
+				
+		surveys 					# xml files storing information about scanner settings,types and placement
+			SoftwareLab 
+				1				# surveys of the 1st bridge
+				  - bridge1_bridgeComponents_survey_tripod.xml
+				  - bridge1_environment_survey_airplane.xml
+				  - bridge1_environment_survey_tripod.xml
+				
+				2				# surveys of the 2nd bridge	
+				  - bridge2_bridgeComponents_survey_tripod.xml
+				  - bridge2_environment_survey_airplane.xml
+				  - bridge2_environment_survey_tripod.xml
+
+				{other bridge surveys}	# same structure continues for other bridges i.e. 3,4,5 ..
+
+			{your project}
 
 	output
-		combined
+		combined 					# scanning outputs are labeled and stroed in this folder	
 
-	- userInput.py
-	- automationHelper.py
+	- userInput.py						# run this file to start automatic Helios, modify input according to your data
+	- automationHelper.py					# helper functions 
 						  
 					   

@@ -9,6 +9,9 @@ Created on Fri Oct 15 14:58:58 2021
 from automationHelper import automaticScan, combineXYZ
 
 
+# modify input according to your data
+####################################### INPUT ########################################
+
 # Number of bridges that is going to be used:
 noOfBridges = 3
 
@@ -25,7 +28,7 @@ purpose = "scan&combine" # available options: "scan", "combine", and "scan&combi
 # Then it is going to be added to other bridges given by the interval [startIndex,startIndex+noOfBridges]
 isSameEnvironment = False # If False, environment of each bridges will be scanned seperately
 
-# If output of Helios is not desired to be seen during scanning, set it to Fale.
+# If output of Helios is not desired to be seen during scanning, set it to False.
 verbose = False
 
 # Structural elements that are created in Revit and their labels in Point Cloud (can add more elements and labels): 
@@ -40,14 +43,17 @@ classes = {
 # Name of the project where different bridges will be stored:
 projectName = "SoftwareLab"
 
-shuffle = True # if True, combine text file for point cloud is shuffled so that points are not ordered with respect to scaning order
+shuffle = True # if True, the combined text file for point cloud is shuffled so that points are not ordered with respect to scanning order
 
 
 # Pulse frequency of lidar that is simulated by Helios. If it is set manually, these two values can be left as None, otherwise 
-# define a value that is going to be used in each scanning. The higher the value the denser the point clouds will be. However simulation time 
+# define a value that is going to be used in each scan. The higher the value the denser the point clouds will be. However simulation time 
 # and memory consumption increases as well. 
-pulseFreq_tripod = 20000 # pulse frequency (Hz) for tripod scanning
-pulseFreq_airplane = 180000 # pulse frequency (Hz) for airplane scanning
+pulseFreq_tripod = 15000 # pulse frequency (Hz) for tripod scanning
+pulseFreq_airplane = 120000 # pulse frequency (Hz) for airplane scanning
+
+#######################################      ########################################
+
 
 
 # Repeats scanning and combining procedure for all bridges, starting from "startIndex"th bridge till "startIndex+noOfBridges"th bridge

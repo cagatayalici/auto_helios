@@ -128,10 +128,9 @@ The demo simulation can be executed as follows:
 **WINDOWS**
 ```
 helios.exe data/surveys/demo/tls_arbaro_demo.xml
-helios.exe data/surveys/projects/2/bridge_survey_1.xml
+helios.exe data/surveys/SoftwareLab/1/bridge1_bridgeComponents_survey_tripod.xml
 
 ```
-
 
 ## 🛠 Building from source
 
