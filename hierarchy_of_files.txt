@@ -1,0 +1,40 @@
+helios - main 
+	data 
+		sceneparts 
+			projects
+				dataset
+					1 
+					   - bridge1_abutments.obj
+					   - bridge1_deck.obj
+					   - bridge1_environment.obj
+					   - bridge1_piers.obj
+					   - bridge1_railings.obj
+					2  
+					   - bridge2_abutments.obj
+					   - bridge2_deck.obj
+					   - bridge2_environment.obj
+					   - bridge2_piers.obj
+					   - bridge2_railings.obj
+		scenes 
+			projects
+				dataset 
+					- bridge_scene.xml
+		surveys 
+			projects 
+				dataset
+					1
+					   - bridge1_bridgeComponents_survey.xml
+					   - bridge1_environment_survey_airplane.xml
+					   - bridge1_environment_survey_tripod.xml
+					2
+					   - bridge2_bridgeComponents_survey.xml
+					   - bridge2_environment_survey_airplane.xml
+					   - bridge2_environment_survey_tripod.xml
+
+	output
+		combined
+
+	- userInput.py
+	- automationHelper.py
+						  
+					   

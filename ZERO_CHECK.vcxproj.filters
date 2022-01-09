@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Program Files\Helios\helios-main\CMakeFiles\bf855ec8142836278eb227acd7d89f69\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{101B53CD-7CF8-3A17-8B72-74C8C08E4378}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

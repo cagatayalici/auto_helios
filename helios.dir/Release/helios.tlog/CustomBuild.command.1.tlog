@@ -1,0 +1,10 @@
+^D:\PROGRAM FILES\HELIOS\HELIOS-MAIN\CMAKELISTS.TXT
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Program Files/Helios/helios-main" "-BD:/Program Files/Helios/helios-main" --check-stamp-file "D:/Program Files/Helios/helios-main/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

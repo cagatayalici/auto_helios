@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><document>
+	<!-- Default scanner settings: -->
+	<scannerSettings id="profile1" active="true" pulseFreq_hz="30000" scanFreq_hz="120" scanAngle="180" headRotatePerSec_deg="10.0"/>
+	<survey name="bridge2_environment_survey" scene="data/scenes/SoftwareLab/bridge_scene.xml#bridge_scene" platform="data/platforms.xml#tripod" scanner="data/scanners_tls.xml#riegl_vz400">
+		<FWFSettings binSize_ns="0.2" beamSampleQuality="3"/>
+		
+		<!-- leg000 -->		
+		<leg>
+            <platformSettings x="4.4" y="10.0" z="-3.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-50" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg001 -->		
+		<leg>
+            <platformSettings x="12.4" y="10.0" z="-12.3" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-50" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg002 -->		
+		<leg>
+            <platformSettings x="3.6" y="10.0" z="-24.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-50" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg003 -->		
+		<leg>
+            <platformSettings x="63.0" y="10.0" z="-63.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-50" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg004 -->		
+		<leg>
+            <platformSettings x="77.0" y="10.0" z="-49.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-50" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+	
+	
+		
+	</survey>
+</document>

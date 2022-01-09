@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?><document>
+	<!-- Default scanner settings: -->
+	<scannerSettings id="profile1" active="true" pulseFreq_hz="30000" scanFreq_hz="120" scanAngle="180" headRotatePerSec_deg="10.0"/>
+	<survey name="bridge2_abutments_survey" scene="data/scenes/SoftwareLab/bridge_scene.xml#bridge_scene" platform="data/platforms.xml#tripod" scanner="data/scanners_tls.xml#riegl_vz400">
+		<FWFSettings binSize_ns="0.2" beamSampleQuality="3"/>
+		
+		<!-- leg001 -->		
+		<leg>
+            <platformSettings x="-10.0" y="0.0" z="20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg002 -->		
+		<leg>
+            <platformSettings x="-10.0" y="-7.0" z="20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg003 -->		
+		<leg>
+            <platformSettings x="-10.0" y="-14.0" z="20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg004 -->		
+		<leg>
+            <platformSettings x="0.0" y="0.0" z="10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg005 -->		
+		<leg>
+            <platformSettings x="0.0" y="-7.0" z="10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg006 -->		
+		<leg>
+            <platformSettings x="0.0" y="-14.0" z="10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg007 -->		
+		<leg>
+            <platformSettings x="10.0" y="0.0" z="0.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg008 -->		
+		<leg>
+            <platformSettings x="10.0" y="-7.0" z="0.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg009 -->		
+		<leg>
+            <platformSettings x="10.0" y="-14.0" z="0.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg010 -->		
+		<leg>
+            <platformSettings x="20.0" y="0.0" z="-10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg011 -->		
+		<leg>
+            <platformSettings x="20.0" y="-7.0" z="-10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg012 -->		
+		<leg>
+            <platformSettings x="20.0" y="-14.0" z="-10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg013 -->		
+		<leg>
+            <platformSettings x="30.0" y="0.0" z="-20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg014 -->		
+		<leg>
+            <platformSettings x="30.0" y="-7.0" z="-20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg015 -->		
+		<leg>
+            <platformSettings x="30.0" y="-14.0" z="-20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg016 -->		
+		<leg>
+            <platformSettings x="40.0" y="0.0" z="-30.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg017 -->		
+		<leg>
+            <platformSettings x="40.0" y="-7.0" z="-30.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg018 -->		
+		<leg>
+            <platformSettings x="40.0" y="-14.0" z="-30.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<leg>
+            <platformSettings x="50.0" y="0.0" z="-40.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg019 -->		
+		<leg>
+            <platformSettings x="50.0" y="-7.0" z="-40.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg020 -->		
+		<leg>
+            <platformSettings x="50.0" y="-14.0" z="-40.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg021 -->	
+		<leg>
+            <platformSettings x="60.0" y="0.0" z="-50.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg022 -->		
+		<leg>
+            <platformSettings x="60.0" y="-7.0" z="-50.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg023 -->		
+		<leg>
+            <platformSettings x="60.0" y="-14.0" z="-50.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg024 -->	
+		<leg>
+            <platformSettings x="70.0" y="0.0" z="-60.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg025 -->		
+		<leg>
+            <platformSettings x="70.0" y="-7.0" z="-60.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg026 -->		
+		<leg>
+            <platformSettings x="70.0" y="-14.0" z="-60.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg027 -->		
+		<leg>
+            <platformSettings x="70.0" y="0.0" z="-90.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg028 -->		
+		<leg>
+            <platformSettings x="70.0" y="-7.0" z="-90.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg029 -->		
+		<leg>
+            <platformSettings x="70.0" y="-14.0" z="-90.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg030 -->		
+		<leg>
+            <platformSettings x="60.0" y="0.0" z="-80.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg031 -->		
+		<leg>
+            <platformSettings x="60.0" y="-7.0" z="-80.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg032 -->		
+		<leg>
+            <platformSettings x="60.0" y="-14.0" z="-80.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg033 -->	
+		<leg>
+            <platformSettings x="50.0" y="0.0" z="-70.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg034 -->		
+		<leg>
+            <platformSettings x="50.0" y="-7.0" z="-70.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg035 -->		
+		<leg>
+            <platformSettings x="50.0" y="-14.0" z="-70.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg036 -->		
+		<leg>
+            <platformSettings x="40.0" y="0.0" z="-60.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg037 -->		
+		<leg>
+            <platformSettings x="40.0" y="-7.0" z="-60.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg038 -->		
+		<leg>
+            <platformSettings x="40.0" y="-14.0" z="-60.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg039 -->		
+		<leg>
+            <platformSettings x="30.0" y="0.0" z="-50.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg040 -->		
+		<leg>
+            <platformSettings x="30.0" y="-7.0" z="-50.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg041 -->		
+		<leg>
+            <platformSettings x="30.0" y="-14.0" z="-50.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg042 -->		
+		<leg>
+            <platformSettings x="20.0" y="0.0" z="-40.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg043 -->		
+		<leg>
+            <platformSettings x="20.0" y="-7.0" z="-40.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg044 -->		
+		<leg>
+            <platformSettings x="20.0" y="-14.0" z="-40.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg045 -->		
+		<leg>
+            <platformSettings x="10.0" y="0.0" z="-30.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg046 -->		
+		<leg>
+            <platformSettings x="10.0" y="-7.0" z="-30.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg047 -->		
+		<leg>
+            <platformSettings x="10.0" y="-14.0" z="-30.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg048 -->		
+		<leg>
+            <platformSettings x="0.0" y="0.0" z="-20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg049 -->		
+		<leg>
+            <platformSettings x="0.0" y="-7.0" z="-20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg050 -->		
+		<leg>
+            <platformSettings x="0.0" y="-14.0" z="-20.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg051 -->		
+		<leg>
+            <platformSettings x="-10.0" y="0.0" z="-10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg052 -->		
+		<leg>
+            <platformSettings x="-10.0" y="-7.0" z="-10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+        </leg>
+		
+		<!-- leg053 -->		
+		<leg>
+            <platformSettings x="-10.0" y="-14.0" z="-10.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+		</leg>
+		
+		<!-- leg054 -->	
+		<leg>
+            <platformSettings x="3.0" y="12.0" z="-7.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+		</leg>
+		
+		<!-- leg055 -->	
+		<leg>
+            <platformSettings x="4.0" y="-9.0" z="-6.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+		</leg>
+		
+		<!-- leg056 -->	
+		<leg>
+            <platformSettings x="58" y="12.0" z="-59.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+		</leg>
+		
+		<!-- leg057 -->	
+		<leg>
+            <platformSettings x="60" y="-9.0" z="-60.0" onGround="false"/>
+            <scannerSettings template="profile1" verticalAngleMin_deg="-180" verticalAngleMax_deg="180" headRotateStart_deg="-180" headRotateStop_deg="180" trajectoryTimeInterval_s="1.0"/>
+		</leg>
+		
+
+		
+	</survey>
+</document>

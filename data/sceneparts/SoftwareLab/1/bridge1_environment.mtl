@@ -1,0 +1,16 @@
+# created with pCon.planner
+
+newmtl mat_Global_2c30806c
+Ka 0.74901962 1 0.49803922
+Kd 0.74901962 1 0.49803922
+Ks 0 0 0
+Ns 0
+illum 2
+
+newmtl mat_Global_615efe23
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0
+Ns 0
+illum 2
+

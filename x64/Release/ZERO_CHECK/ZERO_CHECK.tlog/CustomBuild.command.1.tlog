@@ -1,0 +1,10 @@
+^D:\PROGRAM FILES\HELIOS\HELIOS-MAIN\CMAKEFILES\BF855EC8142836278EB227ACD7D89F69\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Program Files/Helios/helios-main" "-BD:/Program Files/Helios/helios-main" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Program Files/Helios/helios-main/helios.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

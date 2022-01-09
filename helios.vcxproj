@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{045D75F1-AEDE-3647-AAFD-94A88588A9F7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>helios</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\Helios\helios-main\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">helios.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">helios</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\Helios\helios-main\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">helios.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">helios</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\Helios\helios-main\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">helios.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">helios</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\Helios\helios-main\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">helios.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">helios</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>_OS_WINDOWS_;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_OS_WINDOWS_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\LAStools\LASlib\lib\Release\LASlib.lib;lib\boost\stage\lib\libboost_system-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_thread-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_regex-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_filesystem-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_serialization-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_iostreams-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_zlib-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_chrono-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_date_time-vc142-mt-gd-x64-1_75.lib;lib\boost\stage\lib\libboost_atomic-vc142-mt-gd-x64-1_75.lib;lib\armadillo\Release\armadillo.lib;lib\gdal\lib\gdal_i.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\Program Files\scilab-6.1.0\bin</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Program Files\scilab-6.1.0\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Program Files/Helios/helios-main/Debug/helios.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Program Files/Helios/helios-main/Debug/helios.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>_OS_WINDOWS_;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_OS_WINDOWS_;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\LAStools\LASlib\lib\Release\LASlib.lib;lib\boost\stage\lib\libboost_system-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_thread-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_regex-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_filesystem-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_serialization-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_iostreams-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_zlib-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_chrono-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_date_time-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_atomic-vc142-mt-x64-1_75.lib;lib\armadillo\Release\armadillo.lib;lib\gdal\lib\gdal_i.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\Program Files\scilab-6.1.0\bin\*.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/LIBPATH:D:\Program Files\scilab-6.1.0\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Program Files/Helios/helios-main/Release/helios.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Program Files/Helios/helios-main/Release/helios.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>_OS_WINDOWS_;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_OS_WINDOWS_;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\LAStools\LASlib\lib\Release\LASlib.lib;lib\boost\stage\lib\libboost_system-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_thread-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_regex-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_filesystem-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_serialization-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_iostreams-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_zlib-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_chrono-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_date_time-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_atomic-vc142-mt-x64-1_75.lib;lib\LAStools\LASlib\lib\Release\LASlib.lib;lib\armadillo\Release\armadillo.lib;lib\gdal\lib\gdal_i.lib;lib\boost\stage\lib\libboost_system-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_thread-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_regex-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_filesystem-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_serialization-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_iostreams-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_zlib-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_chrono-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_date_time-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_atomic-vc142-mt-x64-1_75.lib;lib\armadillo\Release\armadillo.lib;lib\gdal\lib\gdal_i.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Program Files/Helios/helios-main/MinSizeRel/helios.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Program Files/Helios/helios-main/MinSizeRel/helios.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>_OS_WINDOWS_;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_OS_WINDOWS_;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program Files\Helios\helios-main\src;D:\Program Files\Helios\helios-main\src\assetloading;D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter;D:\Program Files\Helios\helios-main\src\platform;D:\Program Files\Helios\helios-main\src\scanner;D:\Program Files\Helios\helios-main\src\scanner\beamDeflector;D:\Program Files\Helios\helios-main\src\scanner\detector;D:\Program Files\Helios\helios-main\src\scene;D:\Program Files\Helios\helios-main\src\scene\primitives;D:\Program Files\Helios\helios-main\src\surveyplayback;D:\Program Files\Helios\helios-main\src\noise;D:\Program Files\Helios\helios-main\src\maths;D:\Program Files\Helios\helios-main\src\util;D:\Program Files\Helios\helios-main\src\util\logger;D:\Program Files\Helios\helios-main\src\test;D:\Program Files\Helios\helios-main\lib\glm;D:\Program Files\Helios\helios-main\lib\gdal\include;D:\Program Files\Helios\helios-main\lib\LAStools\LASzip\src;D:\Program Files\Helios\helios-main\lib\LAStools\LASlib\inc;D:\Program Files\Helios\helios-main\lib\armadillo\include;D:\Program Files\Helios\helios-main\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\LAStools\LASlib\lib\Release\LASlib.lib;lib\boost\stage\lib\libboost_system-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_thread-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_regex-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_filesystem-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_serialization-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_iostreams-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_zlib-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_chrono-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_date_time-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_atomic-vc142-mt-x64-1_75.lib;lib\LAStools\LASlib\lib\Release\LASlib.lib;lib\armadillo\Release\armadillo.lib;lib\gdal\lib\gdal_i.lib;lib\boost\stage\lib\libboost_system-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_thread-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_regex-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_filesystem-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_serialization-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_iostreams-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_zlib-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_chrono-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_date_time-vc142-mt-x64-1_75.lib;lib\boost\stage\lib\libboost_atomic-vc142-mt-x64-1_75.lib;lib\armadillo\Release\armadillo.lib;lib\gdal\lib\gdal_i.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Program Files/Helios/helios-main/RelWithDebInfo/helios.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Program Files/Helios/helios-main/RelWithDebInfo/helios.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Program Files\Helios\helios-main\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Program Files/Helios/helios-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Program Files/Helios/helios-main" "-BD:/Program Files/Helios/helios-main" --check-stamp-file "D:/Program Files/Helios/helios-main/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cxx.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.19\Modules\FindBoost.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindGDAL.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeSystem.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\cmake.verify_globs;D:\Program Files\Helios\helios-main\cmake\CMakeBuildExec.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeConfig.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeLibraries.cmake;D:\Program Files\Helios\helios-main\cmake\CMakePybinds.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeSources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\Helios\helios-main\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Program Files/Helios/helios-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Program Files/Helios/helios-main" "-BD:/Program Files/Helios/helios-main" --check-stamp-file "D:/Program Files/Helios/helios-main/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cxx.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.19\Modules\FindBoost.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindGDAL.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeSystem.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\cmake.verify_globs;D:\Program Files\Helios\helios-main\cmake\CMakeBuildExec.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeConfig.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeLibraries.cmake;D:\Program Files\Helios\helios-main\cmake\CMakePybinds.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeSources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\Helios\helios-main\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Program Files/Helios/helios-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Program Files/Helios/helios-main" "-BD:/Program Files/Helios/helios-main" --check-stamp-file "D:/Program Files/Helios/helios-main/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cxx.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.19\Modules\FindBoost.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindGDAL.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeSystem.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\cmake.verify_globs;D:\Program Files\Helios\helios-main\cmake\CMakeBuildExec.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeConfig.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeLibraries.cmake;D:\Program Files\Helios\helios-main\cmake\CMakePybinds.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeSources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\Helios\helios-main\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Program Files/Helios/helios-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Program Files/Helios/helios-main" "-BD:/Program Files/Helios/helios-main" --check-stamp-file "D:/Program Files/Helios/helios-main/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cxx.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.19\Modules\FindBoost.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindGDAL.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\3.19.2\CMakeSystem.cmake;D:\Program Files\Helios\helios-main\CMakeFiles\cmake.verify_globs;D:\Program Files\Helios\helios-main\cmake\CMakeBuildExec.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeConfig.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeLibraries.cmake;D:\Program Files\Helios\helios-main\cmake\CMakePybinds.cmake;D:\Program Files\Helios\helios-main\cmake\CMakeSources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\Helios\helios-main\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\LidarSim.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\LidarSim.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\Asset.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\Asset.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\LadLutLoader.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\LadLutLoader.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\MaterialsFileReader.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\MaterialsFileReader.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\SceneLoadingSpecification.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\SceneLoadingSpecification.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\ScenePart.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\ScenePart.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\SpectralLibrary.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\SpectralLibrary.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\VoxelFileParser.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\VoxelFileParser.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\XmlAssetsLoader.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\XmlAssetsLoader.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\AbstractGeometryFilter.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\AbstractGeometryFilter.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\DetailedVoxelLoader.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\DetailedVoxelLoader.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\GeoTiffFileLoader.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\GeoTiffFileLoader.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\RotateFilter.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\RotateFilter.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\ScaleFilter.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\ScaleFilter.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\TranslateFilter.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\TranslateFilter.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\WavefrontObjFileLoader.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\WavefrontObjFileLoader.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\XYZPointCloudFileLoader.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\assetloading\geometryfilter\XYZPointCloudFileLoader.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\helios_version.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\helios_version.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\maths\Directions.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\Directions.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\maths\LadLut.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\LadLut.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\MathConstants.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\MathConverter.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\PlaneFitter.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\maths\RayUtils.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\RayUtils.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\maths\Rotation.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\Rotation.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\maths\RotationOrder.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\RotationOrder.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\maths\Vectorial.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\maths\Vectorial.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\noise\NoiseSource.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\noise\NormalNoiseSource.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\noise\RandomNoiseSource.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\noise\RandomnessGenerator.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\noise\RandomnessGenerator.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\noise\UniformNoiseSource.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\platform\GroundVehiclePlatform.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\platform\GroundVehiclePlatform.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\platform\HelicopterPlatform.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\platform\HelicopterPlatform.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\platform\LinearPathPlatform.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\platform\LinearPathPlatform.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\platform\MovingPlatform.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\platform\MovingPlatform.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\platform\Platform.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\platform\Platform.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\platform\PlatformSettings.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\platform\PlatformSettings.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\platform\SimplePhysicsPlatform.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\platform\SimplePhysicsPlatform.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyAABBWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyBeamDeflectorWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyDetailedVoxelWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyDetectorWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyDoubleVector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\pybinds\PyHelios.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyHeliosException.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyHeliosOutputWrapper.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\pybinds\PyHeliosSimulation.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyHeliosSimulation.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyHeliosUtils.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyIntegerList.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyMeasurementVectorWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyMeasurementWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyNoiseSourceWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyPlatformWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyPrimitiveWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyRandomnessGeneratorWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyRaySceneIntersectionWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyScenePartWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PySceneWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PySimulationCycleCallback.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyTrajectoryVectorWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyTrajectoryWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyTriangleWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PyVertexWrapper.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\pybinds\PythonDVec3.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\FWFSettings.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\FWFSettings.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\Measurement.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\Scanner.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\Scanner.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\ScannerHead.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\ScannerHead.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\ScannerSettings.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\Trajectory.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\AbstractBeamDeflector.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\AbstractBeamDeflector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\ConicBeamDeflector.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\ConicBeamDeflector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\FiberArrayBeamDeflector.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\FiberArrayBeamDeflector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\OscillatingMirrorBeamDeflector.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\OscillatingMirrorBeamDeflector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\PolygonMirrorBeamDeflector.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\PolygonMirrorBeamDeflector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\RisleyBeamDeflector.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\beamDeflector\RisleyBeamDeflector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\detector\AbstractDetector.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\detector\AbstractDetector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\detector\AbstractPulseRunnable.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\detector\AbstractPulseRunnable.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\detector\FullWaveformPulseDetector.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\detector\FullWaveformPulseDetector.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\detector\FullWaveformPulseRunnable.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\detector\FullWaveformPulseRunnable.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\detector\MarquardtFitter.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\detector\MarquardtFitter.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scanner\detector\MeasurementsBuffer.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scanner\detector\MeasurementsBuffer.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\IntersectionHandlingResult.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\IntersectionHandlingResult.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\KDTreeNode.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\KDTreeNode.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\KDTreeNodeRoot.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\KDTreeNodeRoot.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\KDTreePrimitiveComparator.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\KDTreeRaycaster.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\KDTreeRaycaster.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\Material.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\Material.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\RaySceneIntersection.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\RaySceneIntersection.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\Scene.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\Scene.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\primitives\AABB.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\primitives\AABB.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\primitives\DetailedVoxel.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\primitives\DetailedVoxel.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\primitives\Primitive.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\primitives\Primitive.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\primitives\Triangle.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\primitives\Triangle.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\primitives\Vertex.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\primitives\Vertex.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\scene\primitives\Voxel.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\scene\primitives\Voxel.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\surveyplayback\Leg.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\surveyplayback\Leg.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\surveyplayback\Simulation.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\surveyplayback\Simulation.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\surveyplayback\SimulationCycleCallback.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\surveyplayback\Survey.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\surveyplayback\Survey.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\surveyplayback\SurveyPlayback.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\surveyplayback\SurveyPlayback.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\surveyplayback\XmlSurveyLoader.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\surveyplayback\XmlSurveyLoader.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\targetver.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\BaseTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\LadLutTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\NoiseTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\PlaneFitterTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\PlatformPhysicsTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\RandomTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\RayIntersectionTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\ScenePartSplitTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\SerializationTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\SurveyCopyTest.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\Test.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\test\Tests.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\test\VoxelParsingTest.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\util\ArgumentsParser.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\ArgumentsParser.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\Color4f.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\util\FileUtils.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\FileUtils.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\HeliosException.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\LasSpecification.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\LasSyncFileWriter.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\util\PrintUtils.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\PrintUtils.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\util\SerialIO.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\SerialIO.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\SimpleSyncFileWriter.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\SyncFileWriter.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\ThreadPool.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\util\TimeWatcher.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\TimeWatcher.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\ZipSyncFileWriter.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\logger\file_logger.hpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\logger\full_logger.hpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\logger\logger.hpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\logger\logger_factory.hpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\logger\logging.hpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\logger\logging_common.hpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\logger\logging_creation.hpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\logger\std_out_logger.hpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\serial.h" />
+    <ClCompile Include="D:\Program Files\Helios\helios-main\src\util\tinyxml2.cpp" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\tinyxml2.h" />
+    <ClInclude Include="D:\Program Files\Helios\helios-main\src\util\typedef.h" />
+    <ResourceCompile Include="D:\Program Files\Helios\helios-main\AppIcon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Program Files\Helios\helios-main\ZERO_CHECK.vcxproj">
+      <Project>{8254A6DD-89D7-3F5A-8F7E-05ECCAF9B050}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
